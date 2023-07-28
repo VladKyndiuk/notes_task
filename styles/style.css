@@ -1,0 +1,130 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.table__container{
+    width: 100%;  
+}
+table{
+    width: 100%;
+    border-spacing: 0 6px;
+}
+
+.table__body{
+    display: block;
+    height: 323px;
+    overflow: auto;
+    overflow: overlay;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;/* even columns width , fix width of table too*/
+}
+
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    
+}
+
+
+/* TABLE HEAD  */
+table th:first-child{
+    width: 5%;
+    border-radius:5px 0 0 5px;
+  }
+  
+  table th:last-child{
+    border-radius:0 5px 5px 0;
+  }
+thead{
+    color: #fff;
+    background-color: #999999;
+    height: 50px;
+    
+}
+table th{
+    text-align: start;
+    margin: 0;
+}
+
+
+/* TABLE ROWS  */
+
+table tbody tr{
+    font-size: 20px;
+    color: #616161;
+    background-color: #e8eaf5;
+    height: 60px;
+}
+table tbody tr td:nth-child(1){
+    width: 5%;
+    white-space: nowrap;
+}
+table tbody tr td:nth-child(2){
+    font-weight: 600;
+}
+.icon__container{
+    background-color: #616161;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon__image{
+    height: 30px;
+}
+
+.row__button{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    position:relative;
+    height: 50px;
+    width: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.row__button:hover{
+    background-color: #d1d7f3;
+}
+
+.row__button .button__image{
+    height: 30px;
+    position:absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* BUTTON SECTION */
+
+.button__section{
+    display: flex;
+    justify-content: end;
+}
+
+.button__section button{
+    margin: 60px 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    transition: all 0.1s ease;
+}
+.button__section button:hover{
+    background-color: #0004;
+}
