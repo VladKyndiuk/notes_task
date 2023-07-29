@@ -173,8 +173,13 @@ form{
     /* height: 500px; */
 }
 
-input,select {
+
+input,select,textarea {
     font-size: 20px;
     width: 90%;
     height: 30px;
   }
+textarea{
+    resize: vertical;
+    max-height: 500px;
+}

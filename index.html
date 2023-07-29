@@ -37,127 +37,8 @@
         
 
             
-                <tbody class="table__body">
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/lightbulb.png" alt="IDEA">
-                            </div>   
-                        </td>
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
+                <tbody class="table__body" id="main_table_body">
                     
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/shopping-cart.png" alt="TASK">
-                            </div> 
-                        </td>   
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/thought.png" alt="THOUGHT">
-                            </div> 
-                        </td>   
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/thought.png" alt="THOUGHT">
-                            </div> 
-                        </td>   
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/shopping-cart.png" alt="TASK">
-                            </div> 
-                        </td>   
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/shopping-cart.png" alt="TASK">
-                            </div> 
-                        </td>   
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                            <div class="icon__container">
-                                <img class="icon__image" src="/images/categories/shopping-cart.png" alt="TASK">
-                            </div> 
-                        </td>   
-                        <td> Shopping List </td>
-                        <td> April, 20, 2021</td>
-                        <td> Task </td>
-                        <td> Tomatoes, Bread </td>
-                        <td>3/4/2021</td>
-                        <td> 
-                            <button class="row__button"><img class="button__image" src="/images/pencil.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/archive.png" alt=""></button>
-                            <button class="row__button"><img class="button__image" src="/images/delete.png" alt=""></button>
-                        </td>
-                    </tr>
                         
                 </tbody>
             
@@ -169,7 +50,7 @@
        
     </section>
     <section class="button__section">
-        <button>Create Note</button>
+        <button id="modal_open_btn">Create Note</button>
     </section>
 
     <section class="table__body">
@@ -182,11 +63,11 @@
                     <th> Archieved </th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody id="pivot_table_body">
+                <!-- <tr>
                     <td> 
                         <div class="icon__container">
-                            <img class="icon__image" src="/images/categories/shopping-cart.png" alt="TASK">
+                            <img class="icon__image" src="/images/categories/task.png" alt="task">
                         </div>   
                     </td>
                     <td> Task </td>
@@ -196,7 +77,7 @@
                 <tr>
                     <td> 
                         <div class="icon__container">
-                            <img class="icon__image" src="/images/categories/thought.png" alt="THOUGHT">
+                            <img class="icon__image" src="/images/categories/thought.png" alt="thought ">
                         </div> 
                     </td>   
                     <td> Random Thought </td>
@@ -207,13 +88,13 @@
                 <tr>
                     <td> 
                         <div class="icon__container">
-                            <img class="icon__image" src="/images/categories/lightbulb.png" alt="THOUGHT">
+                            <img class="icon__image" src="/images/categories/idea.png" alt="idea">
                         </div> 
                     </td>   
                     <td> Idea </td>
                     <td> 10 </td>
                     <td> 15 </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </section>
@@ -221,24 +102,49 @@
 
 <!-- MODAL  -->
 
-    <div id="myModal" class="myModal visible">
+    <div id="add_task_modal" class="myModal">
 
-        <div class="myModalContent">
+        <div id="add_task_modal_content" class="myModalContent">
             <h1>Create Note</h1>
             <form>
-                <input placeholder="Enter Name">
-                <select id="cars" name="cars" >
-                    <option value="volvo">Random Thought</option>
-                    <option value="saab">Task</option>
-                    <option value="fiat">Idea</option>
+                <input placeholder="Enter Name" id="add_task_name">
+                <select name="category" id="add_task_category">
+                    <option value="thought">Random Thought</option>
+                    <option value="task">Task</option>
+                    <option value="idea">Idea</option>
                 </select>
-                <input type="date" >
 
-                <input type="submit">
+
+                <textarea id="add_task_content"></textarea>
+                <input type="submit" value="add" id="add_task_btn">
             </form>
         </div>
       
       </div>
-    
+
+      <div id="update_task_modal" class="myModal">
+
+        <div id="update_task_modal_content" class="myModalContent">
+            <h1>Update Note</h1>
+            <form>
+                <input placeholder="Enter Name" id="update_task_name">
+                <select name="category" id="update_task_category">
+                    <option value="thought">Random Thought</option>
+                    <option value="task">Task</option>
+                    <option value="idea">Idea</option>
+                </select>
+
+
+                <textarea id="update_task_content"></textarea>
+                <input type="submit" value="update" id="update_task_btn">
+            </form>
+        </div>
+      
+      </div>
+
+
+ 
+      
+      <script src="script.js" type="module"></script>
 </body>
 </html>
