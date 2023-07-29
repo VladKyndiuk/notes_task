@@ -128,3 +128,53 @@ table tbody tr td:nth-child(2){
 .button__section button:hover{
     background-color: #0004;
 }
+
+
+/* MODAL WINDOW */
+
+.myModal{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    /* opacity: 1; */
+    visibility: hidden;
+}
+.myModalContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 16px;
+    min-width: 900px;
+    /* min-height: 900px; */
+    width: fit-content;
+    height: fit-content;
+}
+.visible{
+    
+
+    visibility: visible;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    /* height: 500px; */
+}
+
+input,select {
+    font-size: 20px;
+    width: 90%;
+    height: 30px;
+  }
